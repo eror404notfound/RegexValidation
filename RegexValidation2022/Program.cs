@@ -10,8 +10,8 @@ namespace RegexValidation2022
     {
         static void Main(string[] args)
         {
-            string inputFirstName = "Raj";
-            bool result = RegexValidationCheck.RegexValidate(inputFirstName);
+            string inputLastName = "Rathore";
+            bool result = RegexValidationCheck.RegexValidate(inputLastName);
             Console.WriteLine("\n{0}", result);
             Console.ReadLine();
         }
