@@ -9,10 +9,10 @@ namespace RegexValidation2022
 {
     internal class RegexValidationCheck
     {
-        public static string LastName = "^[A-Z]{1}[a-z]{2,}$";
-        public static bool RegexValidate(string inputLastName)
+        public static string email = "^[0-9a-z]{1,}([.+-_]*)(([0-9a-z]{1,})*)(@)(gmail|bl)(.)(com|co)([.]*)([in]*)$";
+        public static bool RegexValidate(string inputMail)
         {
-            return Regex.IsMatch(inputLastName, LastName);
+            return Regex.IsMatch(inputMail, email);
         }
     }
 }
