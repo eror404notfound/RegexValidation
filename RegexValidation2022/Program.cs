@@ -12,7 +12,7 @@ namespace RegexValidation2022
     {
         public static void Main()
         {  //Test password 8 chars
-            string inputPassword = "Pass@word";
+            string inputPassword = "Dba2s3s4@5k9o7r8D94587";
             bool result = RegexValidationCheck.RegexValidate(inputPassword);
             if (result = true)
             {
