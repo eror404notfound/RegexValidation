@@ -11,7 +11,7 @@ namespace RegexValidation2022
     internal class Program
     {
         public static void Main()
-        {   // Test password 8 chars
+        {  //Test password 8 chars
             string inputPassword = "Pass@word";
             bool result = RegexValidationCheck.RegexValidate(inputPassword);
             if (result = true)
@@ -20,7 +20,7 @@ namespace RegexValidation2022
             }
             else
                 Console.WriteLine("\n Invalid Regex input entered");
-                Console.ReadLine();
+            Console.ReadLine();
         }
 
     }
