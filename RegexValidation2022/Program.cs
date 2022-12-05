@@ -8,14 +8,16 @@ namespace RegexValidation2022
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {   //Test mail:"abc.xyz@bl.co.in";
-            string inputMail = "abc@bl.co";//test for checkig mandatory parts only
-            bool result = RegexValidationCheck.RegexValidate(inputMail);
+        public static void Main()
+        {   //Test Mobile Format:91 6354214526 &:91-4568412365
+            string inputMobileNo = "91 6321458793";
+            bool result = RegexValidationCheck.RegexValidate(inputMobileNo);
             Console.WriteLine("\n{0}", result);
             Console.ReadLine();
         }
-        
-        
     }
 }
+        
+        
+    
+
