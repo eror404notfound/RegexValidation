@@ -1,20 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace RegexValidation2022
 {
     internal class Program
     {
         public static void Main()
-        {   //Test Mobile Format:91 6354214526 &:91-4568412365
-            string inputMobileNo = "91 6321458793";
-            bool result = RegexValidationCheck.RegexValidate(inputMobileNo);
-            Console.WriteLine("\n{0}", result);
-            Console.ReadLine();
+        {   // Test password 8 chars
+            string inputPassword = "Pass@word";
+            bool result = RegexValidationCheck.RegexValidate(inputPassword);
+            if (result = true)
+            {
+                Console.WriteLine("\n Valid Regex input entered");
+            }
+            else
+                Console.WriteLine("\n Invalid Regex input entered");
+                Console.ReadLine();
         }
+
     }
 }
         

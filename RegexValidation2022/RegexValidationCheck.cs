@@ -10,12 +10,14 @@ namespace RegexValidation2022
 {
     internal class RegexValidationCheck
     {
-        public static string mobile = "^[0-9]{1}[0-9]{1}[ -][0-9]{10,}";
-        public static bool RegexValidate(string inputMobileNo)
+        public static string password = "^[A-Z]{1}[A-Za-z].{7,}$";
+        public static bool RegexValidate(string inputPassword)
         {
-            return Regex.IsMatch(inputMobileNo, mobile);
+            return Regex.IsMatch(inputPassword, password);
+          
         }
-
+        
     }
+
     
 }
